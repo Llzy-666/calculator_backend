@@ -84,5 +84,10 @@ def del_all():
     db.session.commit()
     return jsonify({"code":200})
 
+from flask import send_static_file
+@app.route('/')
+def index_page():
+    return send_static_file("index.html")
+
 if __name__ == '__main__':
-    app.run(debug=False, host="0.0.0.0", port=5000)
+    app.run(debug=False, host="0.0.0.0", port=9000)
