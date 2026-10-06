@@ -84,8 +84,7 @@ def del_all():
     db.session.commit()
     return jsonify({"code":200})
 
-from flask import send_static_file
-
+from flask import redirect
 @app.route('/')
 def index():
     # 访问根目录，自动重定向到计算器页面
