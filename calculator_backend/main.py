@@ -85,9 +85,11 @@ def del_all():
     return jsonify({"code":200})
 
 from flask import send_static_file
+
 @app.route('/')
-def index_page():
-    return send_static_file("index.html")
+def index():
+    # 访问根目录，自动重定向到计算器页面
+    return redirect('/static/index.html')
 
 if __name__ == '__main__':
     app.run(debug=False, host="0.0.0.0", port=9000)
