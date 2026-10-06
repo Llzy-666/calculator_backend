@@ -1,4 +1,3 @@
-README.md
 🧮 Frontend-Backend Separation Calculator - Backend Service
 Project Introduction: A calculator backend service built with Flask and SQLite. It provides complete interfaces for expression calculation, data persistence, historical record pagination, keyword search, and single/batch record deletion, delivering stable data support for the frontend calculator page.
 
